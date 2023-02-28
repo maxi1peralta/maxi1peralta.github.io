@@ -1,0 +1,232 @@
+/* Fuente */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+
+body{
+    background: #333a47;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+}
+
+
+    /* Configuración del boton que cambia el color del fondo de la página*/
+#color-button {
+    background-color: #073c85;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+  }
+
+    /* CSS general del CV*/
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+
+    /* CSS de la parte izquierda del CV */
+.container .izquierda{
+    position: relative;
+    background: #073c85;
+    padding: 40px;
+}
+
+    /* Foto y nombre */
+.perfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.perfil .imagen{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.perfil .imagen img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.perfil h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.perfil h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+
+}
+
+
+
+    /* CSS de Información de contacto */
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+    position: relative;
+
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contactInfo li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo li a{
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+    /* CSS de Información sobre educación*/
+.contactInfo.educacion li{
+margin-bottom: 15px;
+}
+
+.contactInfo.educacion h5 span{
+    font-weight: bold;
+    color:#073c85;
+    border-style: hidden;
+    background-color:white;
+}
+
+.contactInfo.educacion h4{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.contactInfo.educacion h4 span{
+    color:white;
+    font-weight: 1000;
+}
+
+
+    /* CSS Información sobre Idioma*/
+.contactInfo.Idioma ul {
+    line-height: 1;
+    position: relative;
+    letter-spacing: 0.8px
+}
+
+.contactInfo.Idioma ul li {
+    list-style-type: circle;
+    position: relative;
+    margin-left: 20px;
+    color: #ECF2F1;
+}
+
+
+
+
+    /* CSS de la parte derecha del CV*/
+
+.container .derecha{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+
+}
+
+.info{
+    margin-bottom: 50px;
+}
+
+.info:last-child{
+    margin-bottom: 0px;
+}
+
+.title2{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.title4{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.title5{
+    margin-top: 20px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+.info ul li {
+    list-style-type: circle;
+    position: relative;
+    margin-left: 20px;
+    color: #000000;
+}
