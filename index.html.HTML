@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV en HTML NUEVO</title>
+    <link rel="stylesheet" href="index.css.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- Titulo invisible de orientación-->
+<title>Creando un CV, utilizando HTML, CSS Y JAVASCRIPT</title>
+
+<body>
+    <button onclick="changeColor()" id="color-button">Haz clic aquí para cambiar el color del fondo</button>
+    <!-- Agrego el código de JavaScript directamente en HMTL para que sea mas simple -->
+    <script>
+    var coloresFondo = ['#ffe4e1', '#d8f8e1', '#fdf9c4', '#ffda9e', '#b0f2c2', '#cce5ff', '#e79eff', '#333a47'];
+
+    function changeColor() {
+    var color = coloresFondo[Math.floor(Math.random() * coloresFondo.length)];
+    document.body.style.backgroundColor = color;
+}
+    </script>
+    </div>
+    
+    <!-- Contenido de la pagina WEB-->
+    <div class="container">
+    <!-- Parte izquierda del CV -->
+        <div class="izquierda">
+            <!-- Foto de perfil y nombre-->
+            <div class="perfil">
+                <div class="imagen">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="imagen">
+                </div>
+                <h2>Earl Steward <br><span>Desarrollador WEB </span></h2>
+            </div>
+            <!-- Infromación de contacto-->
+            <div class="contactInfo">
+                <h3 class="title"> Información de contacto</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                        </i></span>
+                        <span class="text">678-555-0103</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">earlsteward@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">www.earlstewardweb.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </span>
+                        <a href="https://ar.linkedin.com/">www.linkedin.com</a>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Rosario, Santa Fe</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Información sobre estudios -->
+            <div class="contactInfo educacion">
+                <h3 class="title"> Educación</h3>
+                <ul>
+                    <li>
+                        <h5> <span> 2012 - 2017</span></h5>
+                        <h4><span> Bachiller en economía y administación</span></h4>
+                        <h4>Escuela Secundaria General San Martin</h4>
+                    </li>
+                    <li>
+                        <h5><span> 2018 - 2020</span></h5>
+                        <h4><span>Licenciatura en programación</span></h4>
+                        <h4>Universidad tecnológica del futuro</h4>
+                    </li>
+                    <li>
+                        <h5><span> 2020 - 2023</span></h5>
+                        <h4><span> Master en Desarrollo WEB</span></h4>
+                        <h4>Universidad tecnológica del futuro</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Información sobre Niveles de Idioma -->
+            <div class="contactInfo Idioma">
+                <h3 class="title"> Idiomas</h3>
+                <ul>
+                    <li>Español (Avanzado)</li>
+                    <li>Inglés (Avanzado)</li> 
+                    <li>Italiano (intermedio)</li>  
+            </ul>
+            </div>
+        </div>
+
+        <!-- Parte derecha del CV -->
+        <div class="derecha">
+            <div class="info">
+                <!-- Perfil profesional-->
+            <div class="title2"><h2>PERFIL PROFESIONAL:</h2></div>
+    <p> 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta, sem sed semper egestas,
+        magna turpis posuere orci, sed venenatis erat lacus eu quam. Pellentesque auctor iaculis porttitor.
+        Pellentesque quis metus dui. Ut vel consectetur erat. Cras imperdiet iaculis est id pretium. <br><br>
+        <ul><li> Lista de habilidades relevantes para el trabajo, como idiomas, programas de computadoras, certificaciones, etc.
+            Convallis</li>
+        <li> Semper phasellus lobortis at in curae montes etiam inceptos
+            risus mattis</li>
+        <li> Enim euismod dapibus praesent hac nostra cursus arcu 
+            velit taciti.</li>
+        <li> Purus suspendisse ac etiam viverra posuere vivamus
+            tortor ligula sollicitudin placerat.</li></ul>
+            <br>
+        Mauris et nunc imperdiet, sagittis mi id, dapibus nunc. Cras sed dolor eget est feugiat feugiat in nec felis.
+        Cras sit amet scelerisque libero. Integer eu mi magna. <br><br><br>
+    </p>
+            <!-- Experiencia laboral -->
+    </p>
+            <div class="title4"><h2>EXPERIENCIA LABORAL:</h2></div>
+            <p>Phasellus sed elit eget purus venenatis imperdiet eget eu massa. Duis sit amet nisi eget tortor condimentum accumsan.
+            Aliquam nec tristique lectus. Aenean volutpat semper est eget tempor.
+            Vestibulum id massa aliquam, accumsan libero sed, pharetra metus.</p>
+            <br>
+            <ul>
+            <li> Duis lacinia, nulla in volutpat porta, risus ligula suscipit mauris, ac pharetra metus mauris sed nisl.
+                Convallis</li>
+            <li> Semper phasellus lobortis at in curae montes etiam inceptos
+                risus mattis</li>
+            <li> Enim euismod dapibus praesent hac nostra cursus arcu 
+                velit taciti.</li>
+            <li> Purus suspendisse ac etiam viverra posuere vivamus
+                tortor ligula sollicitudin placerat.</li>
+            <li> Himenaeos ultricies fames sociis eleifend montes ullamcorper cursus curae enim sollicitudin
+                ridiculus mi</li>
+            <li> Semper phasellus lobortis at in curae montes etiam inceptos
+                    risus mattis</li>
+                </ul>
+                <br>
+                <!--Habilidades -->
+            </p>
+            <div class="title5"><h2>HABILIDADES:</h2></div>
+            <ul>
+        <li> Lista de habilidades relevantes para el trabajo, como idiomas, programas de computadoras, certificaciones, etc.
+            Convallis</li>
+        <li> Semper phasellus lobortis at in curae montes etiam inceptos
+            risus mattis</li>
+        <li> Enim euismod dapibus praesent hac nostra cursus arcu 
+            velit taciti.</li>
+        <li> Purus suspendisse ac etiam viverra posuere vivamus
+            tortor ligula sollicitudin placerat.</li>
+        <li> Himenaeos ultricies fames sociis eleifend montes ullamcorper cursus curae enim sollicitudin
+            ridiculus mi</li>
+        <li> Semper phasellus lobortis at in curae montes etiam inceptos
+                risus mattis</li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
